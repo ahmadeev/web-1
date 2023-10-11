@@ -23,7 +23,7 @@ function insert(data) {
 
 stringCounter = 1;
 $("#form").on("submit", function(){
-    e.preventDefault();
+    event.preventDefault();
 	$.ajax({
 		url: 'server/validate.php',
 		method: 'post',
