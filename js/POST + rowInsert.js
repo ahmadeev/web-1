@@ -23,7 +23,7 @@ function insert(data) {
 
 stringCounter = 1;
 $("#form").on("submit", function(){
-    event.preventDefault();
+    e.preventDefault();
 	$.ajax({
 		url: 'server/validate.php',
 		method: 'post',
@@ -31,8 +31,6 @@ $("#form").on("submit", function(){
 		data: $(this).serialize(),
 		success: function(data){
             insert(data)        
-
-
 		}
 	});
 });
