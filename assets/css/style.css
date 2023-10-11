@@ -1,0 +1,56 @@
+#container {
+    border-radius: 10px;
+    background: #faf0de;
+    margin: auto auto;
+    text-align: center;
+    width: 1000px;
+    height: 405px;
+
+}
+#header {
+    border-radius: 10px;
+    background: #e9c98f;
+    margin-bottom: 5px;
+    width: 100%;
+    font: 16px sans-serif;
+    line-height: 50px;
+    height: 50px;
+}
+#r_content {
+    border-radius: 10px;
+    background: #e8d8b8;
+    float: right;
+    width: 395px;
+    height: 350px
+}
+#l_content {
+    border-radius: 10px;
+    background: #e8d8b8;
+    float: left;
+    width: 595px;
+    height: 350px
+}
+
+#img {
+    width: 250px;
+    position: relative;
+    float: right;
+    top: -240px;
+    margin-right: 50px;
+}
+
+#values {
+    text-align: left;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+
+
+
+
+#result {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
