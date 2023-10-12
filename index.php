@@ -9,16 +9,16 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 
-<body bgcolor="faf0de">
+<body bgcolor="24190f">
 <div id="container">
     <div id="header">
         <h2>Ahmadeev Danis P3209 #28457</h2>
     </div>
 
-    <div id="l_content">
+    <div id="contentLeft">
         
         <form method="post" id="form">
-            <div id="values">
+            <div id="inputValues">
                 
                 <table width="180">
                     <tr><label>x value:</label></tr>
@@ -71,21 +71,29 @@
                 <button type="reset" id="resetButton" name="resetButton">Reset</button>
             </div>
         </form>
-        <img src="assets/img/pupupu.png" id="img">
+        
     </div>
-    <div id="r_content">
-        <table align="center" border=1 id="result">
+    <div id="contentRight">
+        <img src="assets/img/img.png" id="img">
+    </div>
+    
+    <div id="contentCenter">
+        <table align="center" border="1" id="resultTable">
             <thead>
             <tr>
-                <td style="width:20px">x</td>
-                <td style="width:20px">y</td>
-                <td style="width:20px">R</td>
-                <td style="width:40px">Hit</td>
-                <td style="width:100px">currentTime</td>
-                <td style="width:100px">scriptExecutionTime</td>
+                <th style="width:20px">x</th>
+                <th style="width:20px">y</th>
+                <th style="width:20px">R</th>
+                <th style="width:40px">Hit</th>
+                <th style="width:100px">currentTime</th>
+                <th style="width:100px">scriptTime</th>
             </tr>
             </thead>
         </table>
+    </div>
+
+    <div id="contentBottom">
+
     </div>
 </div>
 

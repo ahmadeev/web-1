@@ -1,8 +1,8 @@
 function insert(data) {
     var obj = JSON.parse(data);
-    var table = document.getElementById('result')
-    if (stringCounter == 14) {table.deleteRow(1); stringCounter -= 1};
-    var tableRow = document.getElementById('result').insertRow(stringCounter);
+    var table = document.getElementById('resultTable')
+    if (stringCounter == 16) {table.deleteRow(1); stringCounter -= 1};
+    var tableRow = document.getElementById('resultTable').insertRow(stringCounter);
 
 
     var xValue = tableRow.insertCell(0);

@@ -27,12 +27,12 @@ function isHit($x, $y, $R) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $startScriptTime = microtime(true);
-    $currentTime = date("H:i:s");
-
     $xx = $_POST["xType"];
     $yy = $_POST["yType"];
     $RR = $_POST["RType"];
+
+    $startScriptTime = microtime(true);
+    $currentTime = date("H:i:s");
 
     $hitResult = isHit($xx, $yy, $RR);
     if ($hitResult) {

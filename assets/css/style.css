@@ -1,53 +1,65 @@
 #container {
-    border-radius: 10px;
-    background: #faf0de;
+    background: #f5eee7;
     margin: auto auto;
     text-align: center;
-    width: 1000px;
-    height: 405px;
-
+    width: 600px;
+    height: 650px;
 }
+
 #header {
-    border-radius: 10px;
-    background: #e9c98f;
-    margin-bottom: 5px;
+    background: #f0e5db;
     width: 100%;
     font: 16px sans-serif;
     line-height: 50px;
     height: 50px;
 }
-#r_content {
-    border-radius: 10px;
-    background: #e8d8b8;
+
+#contentRight {
+    background: #f0e5db;
     float: right;
-    width: 395px;
-    height: 350px
+    width: 50%;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#l_content {
-    border-radius: 10px;
-    background: #e8d8b8;
+
+#contentLeft {
+    background: #f0e5db;
     float: left;
-    width: 595px;
-    height: 350px
+    width: 50%;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentCenter {
+    padding-top: 20px;
+    background: #f0e5db;
+    width: 100%;
+    height: 350px;
+    clear: both;
+}
+
+#contentBottom {
+    width: 100%;
+    height: 20px;    
 }
 
 #img {
     width: 250px;
-    position: relative;
-    float: right;
-    top: -240px;
-    margin-right: 50px;
 }
 
-#values {
+#inputValues {
     text-align: left;
-    padding: 20px;
-    margin-left: 50px;
-    margin-top: 30px;
-
 }
 
-#result {
+#resultTable {
+    padding-top: 20px;
     border-collapse: collapse;
-    margin-top: 20px;
+    background-color: #ffffff;
+    text-align: center;
 }
