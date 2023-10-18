@@ -1,24 +1,30 @@
 #container {
     background: #f5eee7;
     margin: auto auto;
-    text-align: center;
-    width: 600px;
+    width: 500px;
     height: 650px;
 }
 
-#header {
+div#container div {
     background: #f0e5db;
+}
+
+div.mainContent div {
+    width: 50%;
+    height: 250px;
+}
+
+#header {
     width: 100%;
     font: 16px sans-serif;
+    color: rgb(0, 0, 0);
     line-height: 50px;
     height: 50px;
+    text-align: center;
 }
 
 #contentRight {
-    background: #f0e5db;
     float: right;
-    width: 50%;
-    height: 250px;
 
     display: flex;
     align-items: center;
@@ -26,19 +32,11 @@
 }
 
 #contentLeft {
-    background: #f0e5db;
     float: left;
-    width: 50%;
-    height: 250px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #contentCenter {
     padding-top: 20px;
-    background: #f0e5db;
     width: 100%;
     height: 350px;
     clear: both;
@@ -54,12 +52,17 @@
 }
 
 #inputValues {
-    text-align: left;
+    padding-left: 50px;
+    padding-top: 15px;
 }
 
 #resultTable {
-    padding-top: 20px;
     border-collapse: collapse;
     background-color: #ffffff;
+}
+
+#resultTable th, #resultTable td {
+    border: 1px solid black;
     text-align: center;
 }
+

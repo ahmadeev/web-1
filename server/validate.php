@@ -4,11 +4,9 @@ const y_min = -5;
 const y_max = 3;
 
 function isValid($x, $y, $R) {
-    if (($y < y_min) || ($y > y_max)) {
-            return false;
-    } else {
-        return True;
-    }
+    $flag = true;
+    if (($y < y_min) || ($y > y_max) || !(in_array($x, range(-3, 5)) || !(in_array($R, range(1, 5))))) {$flag = false;}
+    return $flag;
 }
 function firstQuadrant($x, $y, $R) {
     return ($y <= $R - $x) && ($y >= 0) && ($x >= 0);
@@ -24,32 +22,36 @@ function isHit($x, $y, $R) {
 }
 
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $xx = $_POST["xType"];
     $yy = $_POST["yType"];
     $RR = $_POST["RType"];
 
-    $startScriptTime = microtime(true);
-    $currentTime = date("H:i:s");
-
-    $hitResult = isHit($xx, $yy, $RR);
-    if ($hitResult) {
-        $hitResult = 'True';
-    } else if ($hitResult == False) {
-        $hitResult = 'False';
+    if (isValid($xx, $yy, $RR)) {
+        $startScriptTime = microtime(true);
+        $currentTime = date("H:i:s");
+    
+        $hitResult = isHit($xx, $yy, $RR);
+        if ($hitResult) {
+            $hitResult = 'True';
+        } else if ($hitResult == False) {
+            $hitResult = 'False';
+        }
+        $scriptExecutionTime = round((number_format(microtime(true) - $startScriptTime, 8, ".", "") * 1000000), 2);
+        $receivedData = array(
+            "x" => $xx,
+            "y" => $yy,
+            "R" => $RR,
+            "isHit" => $hitResult,
+            "currentTime" => $currentTime,
+            "scriptTime" => $scriptExecutionTime,
+        );
+    
+        echo json_encode($receivedData);
     }
-    $scriptExecutionTime = round((number_format(microtime(true) - $startScriptTime, 8, ".", "") * 1000000), 2);
-    $receivedData = array(
-        "x" => $xx,
-        "y" => $yy,
-        "R" => $RR,
-        "isHit" => $hitResult,
-        "currentTime" => $currentTime,
-        "scriptTime" => $scriptExecutionTime,
-    );
+    else {}
 
-    echo json_encode($receivedData);
+
 }
 ?>

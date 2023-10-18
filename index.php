@@ -14,71 +14,71 @@
     <div id="header">
         <h2>Ahmadeev Danis P3209 #28457</h2>
     </div>
+    <div class="mainContent">
+        <div id="contentLeft">
+            
+            <form method="post" id="form">
+                <div id="inputValues">
+                    
+                    <table width="180">
+                        <tr><label>x value:</label></tr>
+                        <tr>
+                            <td><input type="radio" onchange="pupu()" id="rB_3" name="xType" value="-3" />
+                            <label for="rB_3">-3</label></td>
+                            <td><input type="radio" onchange="pupu()" id="rB_2" name="xType" value="-2" />
+                            <label for="rB_2">-2</label></td>
+                            <td><input type="radio" onchange="pupu()" id="rB_1" name="xType" value="-1" />
+                            <label for="rB_1">-1</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" onchange="pupu()" id="rB0" name="xType" value="0" />
+                            <label for="rB0">0</label></td>
+                            <td><input type="radio" onchange="pupu()" id="rB1" name="xType" value="1" />
+                            <label for="rB1">1</label></td>
+                            <td><input type="radio" onchange="pupu()" id="rB2" name="xType" value="2" />
+                            <label for="rB2">2</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" onchange="pupu()" id="rB3" name="xType" value="3" />
+                            <label for="rB3">3</label></td>
+                            <td><input type="radio" onchange="pupu()" id="rB4" name="xType" value="4" />
+                            <label for="rB4">4</label></td>
+                            <td><input type="radio" onchange="pupu()" id="rB5" name="xType" value="5" />
+                            <label for="rB5">5</label></td>
+                        </tr>
+                    </table>
 
-    <div id="contentLeft">
-        
-        <form method="post" id="form">
-            <div id="inputValues">
-                
-                <table width="180">
-                    <tr><label>x value:</label></tr>
-                    <tr>
-                        <td><input type="radio" onchange="pupu()" id="rB_3" name="xType" value="-3" />
-                        <label for="rB_3">-3</label></td>
-                        <td><input type="radio" onchange="pupu()" id="rB_2" name="xType" value="-2" />
-                        <label for="rB_2">-2</label></td>
-                        <td><input type="radio" onchange="pupu()" id="rB_1" name="xType" value="-1" />
-                        <label for="rB_1">-1</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" onchange="pupu()" id="rB0" name="xType" value="0" />
-                        <label for="rB0">0</label></td>
-                        <td><input type="radio" onchange="pupu()" id="rB1" name="xType" value="1" />
-                        <label for="rB1">1</label></td>
-                        <td><input type="radio" onchange="pupu()" id="rB2" name="xType" value="2" />
-                        <label for="rB2">2</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" onchange="pupu()" id="rB3" name="xType" value="3" />
-                        <label for="rB3">3</label></td>
-                        <td><input type="radio" onchange="pupu()" id="rB4" name="xType" value="4" />
-                        <label for="rB4">4</label></td>
-                        <td><input type="radio" onchange="pupu()" id="rB5" name="xType" value="5" />
-                        <label for="rB5">5</label></td>
-                    </tr>
-                </table>
+                    <table width="180">
+                        <tr><td><label>y value:</label></td></tr>
+                        <tr><td><input type="textbox" onchange="pupu()" id="textingtext" name="yType" placeholder="-5 to 3" autocomplete="off"></td></tr>
+                    </table>
 
-                <table width="180">
-                    <tr><td><label>y value:</label></td></tr>
-                    <tr><td><input type="textbox" onchange="pupu()" id="textingtext" name="yType" placeholder="-5 to 3" autocomplete="off"></td></tr>
-                </table>
+                    <table width="190">
+                        <tr><label>R value:</label></tr>
+                        <td><input type="checkbox" onchange="pupu()" id="checkbox1" name="RType" value="1">
+                        <label for="checkbox1">1</label></td>
+                        <td><input type="checkbox" onchange="pupu()" id="checkbox2" name="RType" value="2">
+                        <label for="checkbox2">2</label></td>
+                        <td><input type="checkbox" onchange="pupu()" id="checkbox3" name="RType" value="3">
+                        <label for="checkbox3">3</label></td>
+                        <td><input type="checkbox" onchange="pupu()" id="checkbox4" name="RType" value="4">
+                        <label for="checkbox4">4</label></td>
+                        <td><input type="checkbox" onchange="pupu()" id="checkbox5" name="RType" value="5">
+                        <label for="checkbox5">5</label></td>
+                    </table>
 
-                <table width="190">
-                    <tr><label>R value:</label></tr>
-                    <td><input type="checkbox" onchange="pupu()" id="checkbox1" name="RType" value="1">
-                    <label for="checkbox1">1</label></td>
-                    <td><input type="checkbox" onchange="pupu()" id="checkbox2" name="RType" value="2">
-                    <label for="checkbox2">2</label></td>
-                    <td><input type="checkbox" onchange="pupu()" id="checkbox3" name="RType" value="3">
-                    <label for="checkbox3">3</label></td>
-                    <td><input type="checkbox" onchange="pupu()" id="checkbox4" name="RType" value="4">
-                    <label for="checkbox4">4</label></td>
-                    <td><input type="checkbox" onchange="pupu()" id="checkbox5" name="RType" value="5">
-                    <label for="checkbox5">5</label></td>
-                </table>
-
-                <button type="submit" disabled="" id="submitButton" name="submitButton">Submit</button>
-                <button type="reset" id="resetButton" name="resetButton">Reset</button>
-            </div>
-        </form>
-        
+                    <button type="submit" disabled="" id="submitButton" name="submitButton">Submit</button>
+                    <button type="reset" id="resetButton" name="resetButton">Reset</button>
+                </div>
+            </form>
+            
+        </div>
+        <div id="contentRight">
+            <img src="assets/img/img.png" id="img">
+        </div>
     </div>
-    <div id="contentRight">
-        <img src="assets/img/img.png" id="img">
-    </div>
-    
     <div id="contentCenter">
-        <table align="center" border="1" id="resultTable">
+        <table align="center" id="resultTable">
             <thead>
             <tr>
                 <th style="width:20px">x</th>
@@ -92,10 +92,9 @@
         </table>
     </div>
 
-    <div id="contentBottom">
-
-    </div>
+    
 </div>
+<div id="contentBottom"></div>
 
 <script src="js/POST + rowInsert.js"></script>
 <script src="js/checkboxes.js"></script>
