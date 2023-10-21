@@ -2,18 +2,22 @@ body {
     background-color: #24190f;
 }
 
+#header, #contentLeft, #contentRight, #contentCenter {
+    margin-bottom: 5px;
+}
+
 #container {
-    background: #f5eee7;
+    background: #24190f;
     margin: auto auto;
     width: 600px;
-    height: (650 + 20)px;
+    height: 730px;
 }
 
 div#container div {
     background: #f0e5db;
 }
 
-div.mainContent #contentLeft, div.mainContent #contentRight {
+#contentLeft, #contentRight {
     width: 50%;
     height: 300px;
 }
@@ -40,10 +44,11 @@ div.mainContent #contentLeft, div.mainContent #contentRight {
 }
 
 #contentCenter {
-
     width: 100%;
     height: 350px;
     clear: both;
+
+    padding-top: 20px;
 }
 
 #contentBottom {
