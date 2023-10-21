@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else if ($hitResult == False) {
             $hitResult = 'False';
         }
-        $scriptExecutionTime = round((number_format(microtime(true) - $startScriptTime, 8, ".", "") * 1000000), 2);
+        $scriptExecutionTime = round((microtime(true) - $startScriptTime) * 1000000, 2);
         $receivedData = array(
             "x" => $xx,
             "y" => $yy,
