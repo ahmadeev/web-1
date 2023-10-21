@@ -23,7 +23,7 @@ function isHit($x, $y, $R) {
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+    date_default_timezone_set('Europe/Moscow');
     $xx = $_POST["xType"];
     $yy = $_POST["yType"];
     $RR = $_POST["RType"];

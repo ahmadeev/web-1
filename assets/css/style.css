@@ -1,3 +1,7 @@
+body {
+    background-color: #24190f;
+}
+
 #container {
     background: #f5eee7;
     margin: auto auto;
@@ -91,6 +95,7 @@ form {
     text-align: center;
 }
 
-tr:hover {
-    background-color: rgb(210, 255, 255);
+tr:hover > td {
+    background-color: #e6d4c3;
+    font-weight: bold;
 }

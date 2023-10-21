@@ -10,7 +10,7 @@
     <!-- <script src="js/validate.js"></script> -->
 </head>
 
-<body bgcolor="24190f">
+<body>
 <div id="container">
     <div id="header">
         <h2>Ahmadeev Danis P3209 #28457</h2>
@@ -79,12 +79,12 @@
         <table align="center" id="resultTable">
             <thead>
             <tr>
-                <th style="width:20px">x</th>
-                <th style="width:20px">y</th>
-                <th style="width:20px">R</th>
-                <th style="width:40px">Hit</th>
-                <th style="width:100px">currentTime</th>
-                <th style="width:100px">scriptTime</th>
+                <th style="width:40px">x</th>
+                <th style="width:40px">y</th>
+                <th style="width:40px">R</th>
+                <th style="width:80px">Hit</th>
+                <th style="width:120px">currentTime</th>
+                <th style="width:120px">scriptTime</th>
             </tr>
             </thead>
         </table>
@@ -96,21 +96,23 @@
 
 <script src="js/POST + rowInsert.js"></script>
 <script src="js/checkboxes.js"></script>
+<!-- <script src="js/validate.js"></script> -->
 <script>
     function pupu() {
-    var submitButton = form.querySelector('#submitButton');
-    var xInput = form.querySelector('input[name="xType"]:checked').value;
-    var yInput = form.querySelector('[name="yType"]').value;
-    var RInput = form.querySelector('input[name="RType"]:checked').value;
+        var submitButton = form.querySelector('#submitButton');
+        var xInput = form.querySelector('input[name="xType"]:checked').value;
+        var yInput = form.querySelector('[name="yType"]').value;
+        var RInput = form.querySelector('input[name="RType"]:checked').value;
 
-    if (parseInt(yInput) <= 3 && parseInt(yInput) >= -5 && parseInt(yInput) != null && parseInt(xInput) != null && parseInt(RInput) != null) {
-        submitButton.removeAttribute("disabled");
-        
-    } else {
-        submitButton.setAttribute("disabled", "");
+        if (parseInt(yInput) <= 3 && parseInt(yInput) >= -5 && parseInt(yInput) != null && parseInt(xInput) != null && parseInt(RInput) != null) {
+            submitButton.removeAttribute("disabled");
+            
+        } else {
+            submitButton.setAttribute("disabled", "");
+        }
+    
     }
     
-}
 </script>
 
 
