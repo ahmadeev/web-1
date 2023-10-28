@@ -5,7 +5,12 @@ const y_max = 3;
 
 function isValid($x, $y, $R) {
     $flag = true;
-    if (($y < y_min) || ($y > y_max) || !(in_array($x, range(-3, 5)) || !(in_array($R, range(1, 5))))) {$flag = false;}
+    if (isset($x) && isset($y) && isset($R)) {
+        if (($y >= y_min) && ($y <= y_max) && in_array($x, range(-3, 5)) && in_array($R, range(1, 5))) {$flag = true;}
+        else {$flag = false;}
+    }
+    else {$flag = false;}
+
     return $flag;
 }
 function firstQuadrant($x, $y, $R) {
