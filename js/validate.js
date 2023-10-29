@@ -5,7 +5,8 @@ function disableButton() {
     for (var i = 1; i != stringCounter; i++) {
         var table = document.getElementById('resultTable')
         table.deleteRow(1)
-        
+        stringCounter = 1
+        window.localStorage.setItem('stringCounter', stringCounter)
     }
     
 }

@@ -1,7 +1,10 @@
 function insert(data) {
-    var obj = JSON.parse(data);
-    var table = document.getElementById('resultTable')
-    if (stringCounter == 15) {table.deleteRow(1); stringCounter -= 1};
+    window.localStorage.setItem(stringCounter, data);
+    //var obj = JSON.parse(data);
+    //alert(window.localStorage.getItem(stringCounter))
+    var obj = JSON.parse(window.localStorage.getItem(stringCounter));
+    //var table = document.getElementById('resultTable')
+    //if (stringCounter == 15) {table.deleteRow(1); stringCounter -= 1};
     var tableRow = document.getElementById('resultTable').insertRow(stringCounter);
 
 
@@ -19,10 +22,12 @@ function insert(data) {
     currentTime.innerHTML = obj.currentTime;
     scriptExecutionTime.innerHTML = obj.scriptTime;
 
-    stringCounter += 1    
+    stringCounter += 1
+    window.localStorage.setItem('stringCounter', stringCounter)
 }
 
 stringCounter = 1;
+
 $("#form").on("submit", function(){
     event.preventDefault();
 
