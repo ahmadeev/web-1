@@ -105,3 +105,7 @@ tr:hover > td {
     background-color: #e6d4c3;
     font-weight: bold;
 }
+
+.labels {
+    font-size: small;
+}
