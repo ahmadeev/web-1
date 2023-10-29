@@ -1,6 +1,12 @@
 function disableButton() {
     var submitButton = form.querySelector('#submitButton');
     submitButton.setAttribute("disabled", "")
+    window.localStorage.clear()
+    for (var i = 1; i != stringCounter; i++) {
+        var table = document.getElementById('resultTable')
+        table.deleteRow(1)
+        
+    }
     
 }
 

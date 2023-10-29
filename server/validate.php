@@ -55,7 +55,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         echo json_encode($receivedData);
     }
-    else {}
+    else {
+        http_response_code(502);
+        exit();
+    }
 
 
 }
