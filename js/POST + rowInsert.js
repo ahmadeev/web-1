@@ -25,13 +25,28 @@ function insert(data) {
 stringCounter = 1;
 $("#form").on("submit", function(){
     event.preventDefault();
-	$.ajax({
-		url: 'server/validate.php',
-		method: 'post',
-		dataType: 'html',
-		data: $(this).serialize(),
-		success: function(data){
-            insert(data)        
-		}
-	});
+
+    var RValue = []
+    $("input:checkbox[name=RType]:checked").each(function(){
+        RValue.push($(this).val());
+    });
+
+    var xValue = form.querySelector('input[name="xType"]:checked').value;
+    var yValue = form.querySelector('[name="yType"]').value;
+
+    for (var i of RValue) {
+        var data = {'xType': xValue, 'yType': yValue, 'RType': i}
+
+        $.ajax({
+            url: 'server/validate.php',
+            method: 'post',
+            dataType: 'html',
+            data: data,
+            success: function(data){
+                insert(data)        
+            }
+        });
+    }
+
+
 });
